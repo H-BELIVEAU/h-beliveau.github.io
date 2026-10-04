@@ -16,13 +16,26 @@ function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
 
     if (theme === "dark") {
-        themeIcon.setAttribute("aria-label", "Activer le thème clair");
-        themeIcon.setAttribute("title", "Activer le thème clair");
-        themeIcon.src = "assets/icons/moon-svgrepo-com.svg";
+        // Icône lune
+        themeIcon.innerHTML = `
+            <path d="M20.9 13A9 9 0 0 1 11 3.1
+                     9 9 0 1 0 20.9 13Z"/>
+        `;
+        themeButton.setAttribute("aria-label", "Activer le thème clair");
+        themeButton.setAttribute("title", "Activer le thème clair");
     } else {
-        themeIcon.setAttribute("aria-label", "Activer le thème sombre");
-        themeIcon.setAttribute("title", "Activer le thème sombre");
-        themeIcon.src = "assets/icons/sun-svgrepo-com.svg";
+        // Icône soleil
+        themeIcon.innerHTML = `
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2m0 16v2
+                     M4.93 4.93l1.42 1.42
+                     m11.3 11.3 1.42 1.42
+                     M2 12h2m16 0h2
+                     M4.93 19.07l1.42-1.42
+                     m11.3-11.3 1.42-1.42"/>
+        `;
+        themeButton.setAttribute("aria-label", "Activer le thème sombre");
+        themeButton.setAttribute("title", "Activer le thème sombre");
     }
 
     localStorage.setItem("theme", theme);
@@ -53,11 +66,11 @@ function setLanguage(language) {
     if (language === "fr") {
         languageButton.setAttribute("aria-label", "Passer en anglais");
         languageButton.setAttribute("title", "Switch to English");
-        languageIcon.src = "https://kapowaz.github.io/circle-flags/flags/fr.svg";
+        languageIcon.src = "assets/icons/Flag_of_France.svg";
     } else {
         languageButton.setAttribute("aria-label", "Switch to French");
         languageButton.setAttribute("title", "Passer en français");
-        languageIcon.src = "https://kapowaz.github.io/circle-flags/flags/ca.svg";
+        languageIcon.src = "assets/icons/Flag_of_Canada.svg";
     }
 
     localStorage.setItem("language", language);

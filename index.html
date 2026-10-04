@@ -11,19 +11,42 @@
 
     <link href="styles/components/nav.css" rel="stylesheet">
 
+    <script src="scripts/main.js" defer></script>
+
     <link rel="icon" type="image/png" href="assets/icons/logo.png">
 </head>
 <body>
 
 <header class="site-header">
     <nav class="nav-container" aria-label="Navigation principale">
-        <a class="nav-logo" href="index.html">H-BELIVEAU<span>.</span></a>
+
+        <a class="nav-logo" href="index.html">
+            H-BELIVEAU<span>.</span>
+        </a>
+
+        <div class="nav-controls">
+            <button id="theme-toggle" class="nav-control"
+                    aria-label="Changer de thème" title="Changer de thème">
+                <img id="theme-icon"
+                     src="assets/icons/moon-svgrepo-com.svg" alt="">
+            </button>
+
+            <span class="nav-control-divider" aria-hidden="true"></span>
+
+            <button id="language-toggle" class="nav-control"
+                    aria-label="Passer en anglais" title="Switch to English">
+                <img id="language-icon"
+                     src="https://kapowaz.github.io/circle-flags/flags/fr.svg"
+                     alt="">
+            </button>
+        </div>
 
         <ul class="nav-links">
             <li><a href="#projets">Projets</a></li>
             <li><a href="pages/cv.html">CV</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
         </ul>
+
     </nav>
 </header>
 
@@ -37,9 +60,8 @@
     <div class="hero-content">
         <p class="hero-tag">ÉTUDIANT INGÉNIEUR · ESISAR</p>
 
-        <h1>
-            Concevoir,<br>
-            <span>comprendre, innover.</span>
+        <h1 data-fr="Concevoir,<br><span>comprendre, innover.</span>"
+            data-en="Design,<br><span>understand, innovate.</span>">
         </h1>
 
         <p class="hero-description">
@@ -56,14 +78,14 @@
 
     <h2>Projets<span>.</span></h2>
     <p class="projects-intro">
-        Quelques projets qui illustrent mes compétences et ma curiosité technique.
+        Quelques projets qui illustrent mes compétences.
     </p>
 
     <div class="projects-grid">
         <article class="project-card">
             <img class="project-image" src="assets/images/python_sim.png" alt="Illustration du projet informatique">
 
-            <h3>Projet informatique</h3>
+            <h3>Génération procédurale</h3>
             <p>Un projet mettant en œuvre mes compétences en programmation et en conception logicielle.</p>
             <div class="project-tags">
                 <span>Python</span>
@@ -74,18 +96,19 @@
         <article class="project-card">
             <img class="project-image" src="assets/images/ftc.png" alt="Illustration du projet informatique">
 
-            <h3>Projet robotique</h3>
+            <h3>Robot Sumo</h3>
             <p>Un système conçu pour expérimenter l'interaction entre logiciel et matériel.</p>
             <div class="project-tags">
                 <span>C / C++</span>
                 <span>Robotique</span>
+                <span>Sys. Embarqués</span>
             </div>
         </article>
 
         <article class="project-card">
             <img class="project-image" src="assets/images/NeuralNetwork.png" alt="Illustration du projet informatique">
 
-            <h3>Projet d'intelligence artificielle</h3>
+            <h3>Réseaux de neurones</h3>
             <p>Une exploration de méthodes permettant de résoudre un problème concret.</p>
             <div class="project-tags">
                 <span>IA</span>
@@ -104,29 +127,44 @@
     <h2>Ingénieur en devenir, curieux par nature<span>.</span></h2>
 
     <div class="about-content">
+        
         <div class="about-text">
             <h3>Mon parcours</h3>
             <p>
-                Actuellement étudiant en cycle préparatoire à l'ESISAR,
-                je construis mon parcours autour de l'informatique et des
-                systèmes intelligents. J'aime autant comprendre les
-                fondements théoriques que les mettre en pratique.
+                Actuellement en deuxième année de cycle préparatoire à l’ESISAR
+                - Grenoble INP, je développe mes compétences en informatique,
+                en électronique et en systèmes intelligents. Passionné par la
+                programmation depuis le collège, j’ai découvert la robotique au
+                lycée, une expérience qui a progressivement orienté mon projet
+                professionnel vers les systèmes embarqués, à la croisée du
+                logiciel et du matériel.
             </p>
 
-            <h3>Ma façon d'aborder les problèmes</h3>
+            <h3>Ma façon d’aborder les problèmes</h3>
             <p>
-                Ce qui me motive, c'est partir d'un problème, en comprendre
-                les mécanismes, expérimenter différentes approches et
-                construire une solution concrète. J'apprécie particulièrement
-                les projets qui mêlent réflexion, programmation et réalisation.
+                J’aime analyser un problème dans sa globalité, en comprendre
+                les mécanismes, puis expérimenter différentes approches pour
+                aboutir à une solution concrète. Je privilégie les projets qui
+                associent rigueur scientifique, programmation et mise en œuvre
+                technique, avec une attention particulière portée à la
+                compréhension du système dans son ensemble.
             </p>
 
             <h3>Au-delà du code</h3>
             <p>
-                La robotique me passionne pour son mélange entre logiciel
-                et monde physique. Mon expérience du sport à haut niveau
-                m'a également confronté aux exigences de l'entraînement,
-                de la régularité et du travail collectif.
+                La robotique occupe une place importante dans mes projets
+                personnels. Je suis notamment responsable du projet de robot
+                sumo au club robotique de l’ESISAR. Je m’investis également
+                dans la vie étudiante en tant que secrétaire du club de sport.
+                L’aviron, que j’ai pratiqué à haut niveau et dans lequel j’ai
+                obtenu plusieurs titres nationaux, m’a transmis le goût de
+                l’effort, de la régularité et du travail collectif.<br>
+                Enfin, la vulgarisation scientifique occupe une place particulière
+                dans mon parcours. J’ai beaucoup appris en autonomie grâce à des
+                ressources en ligne, notamment des vidéos consacrées à
+                l’informatique, à l’électronique et à l’ingénierie. À terme,
+                j’aimerais à mon tour rendre ces sujets accessibles au plus grand
+                nombre en créant du contenu de vulgarisation sur YouTube.
             </p>
         </div>
 
@@ -173,37 +211,161 @@
     <div class="experience-list">
         <article class="experience-item">
             <span class="experience-number">-</span>
+
             <div class="experience-content">
                 <h3>Compétitions de robotique</h3>
-                <p class="experience-category">ROBOTIQUE · CONCEPTION · PROGRAMMATION</p>
-                <p>
-                    Conception, programmation et résolution de problèmes
-                    techniques dans un contexte compétitif.
+
+                <p class="experience-category">
+                    ROBOTIQUE · CONCEPTION · PROGRAMMATION · MODÉLISATION
                 </p>
+
+                <div class="awards-list">
+                    <div class="award-line">
+                        <span class="award-year">2024</span>
+                        <div class="award-details">
+                            <h4>Prix Motivation</h4>
+                            <p>FIRST Tech Challenge France · Lycée Institution Notre-Dame de Valence</p>
+                        </div>
+                        <span class="award-role">Programmeur principal</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2025</span>
+                        <div class="award-details">
+                            <h4>Prix Motivation</h4>
+                            <p>FIRST Tech Challenge France · Lycée Institution Notre-Dame de Valence</p>
+                        </div>
+                        <span class="award-role">Mentor</span>
+                    </div>
+                </div>
             </div>
         </article>
 
         <article class="experience-item">
             <span class="experience-number">-</span>
+
             <div class="experience-content">
-                <h3>STEM for ALL — Thales Solidarity</h3>
-                <p class="experience-category">SCIENCES · INGÉNIERIE</p>
-                <p>
-                    Une distinction qui témoigne de mon engagement dans
-                    les sciences, la technologie et l'ingénierie.
+                <h3>Distinctions universitaires</h3>
+
+                <p class="experience-category">
+                    SCIENCES · INGÉNIERIE · SPORT
                 </p>
+
+                <div class="awards-list">
+                    <div class="award-line">
+                        <span class="award-year">2024<br>-<br>2026</span>
+                        <div class="award-details">
+                            <h4>SHN - Grenoble INP</h4>
+                            <p>Étudiant menant un double cursus de sportif de haut niveau avec aménagement d'études avec Grenoble INP</p>
+                        </div>
+                        <span class="award-role">Aviron</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2026</span>
+                        <div class="award-details">
+                            <h4>STEM for ALL - Thales Solidarity</h4>
+                            <p>Lauréat du prix STEM for ALL de Thales Solidarity.</p>
+                        </div>
+                        <span class="award-role">Digitalist</span>
+                    </div>
+                </div>
             </div>
         </article>
 
+
         <article class="experience-item">
             <span class="experience-number">-</span>
+
             <div class="experience-content">
                 <h3>Sport de haut niveau</h3>
-                <p class="experience-category">SPORT · DISCIPLINE · COLLECTIF</p>
-                <p>
-                    Un parcours exigeant qui m'a appris la régularité,
-                    la persévérance et le travail collectif.
+
+                <p class="experience-category">
+                    SPORT · DISCIPLINE · COLLECTIF
                 </p>
+
+                <div class="awards-list">
+                    <div class="award-line">
+                        <span class="award-year">2024</span>
+                        <div class="award-details">
+                            <h4>Sélection CDOS Drôme</h4>
+                            <p>Membre de la sélection 2024 du Comité Départemental Olympique et Sportif en tant qu'espoir en aviron</p>
+                        </div>
+                        <span class="award-role">Espoir 2024</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2024</span>
+                        <div class="award-details">
+                            <h4>Sélection OSV</h4>
+                            <p>Membre de la sélection 2025 de l'Office des Sports Valentinois en tant qu'espoir en aviron</p>
+                        </div>
+                        <span class="award-role">Espoir 2025</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2025</span>
+                        <div class="award-details">
+                            <h4>Champion de France 2XMU</h4>
+                            <p>Titre de Champion de France FFSU en deux de couple mixte</p>
+                        </div>
+                        <span class="award-role">Aviron</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2024</span>
+                        <div class="award-details">
+                            <h4>Vice Champion de France J16H2X</h4>
+                            <p>Titre de vice Champion de France en deux de couple masculin en J16</p>
+                        </div>
+                        <span class="award-role">Aviron</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="experience-item">
+            <span class="experience-number">-</span>
+
+            <div class="experience-content">
+                <h3>Expériences professionnelles</h3>
+
+                <p class="experience-category">
+                    ENTREPRISES
+                </p>
+
+                <div class="awards-list">
+                    <div class="award-line">
+                        <span class="award-year">2025</span>
+                        <div class="award-details">
+                            <h4>Opérateur de production - Sogal, Valence</h4>
+                            <p>Missions consistant au montage et réglage de portes de placard coulissantes, contrôle de qualité et manutention.</p>
+                        </div>
+                        <span class="award-role">Intérim</span>
+                    </div>
+
+                    <div class="award-line">
+                        <span class="award-year">2025<br>-<br>2026</span>
+                        <div class="award-details">
+                            <h4>Professeur particulier - Superprof</h4>
+                            <p>Cours de Mathématiques, Numérique et Science Informatiques à des élèves entre la seconde et la terminale.</p>
+                        </div>
+                        <span class="award-role">Enseignement</span>
+                    </div>
+                    
+                    <div class="award-line">
+                        <span class="award-year">2026</span>
+                        <div class="award-details">
+                            <h4>Monteur aluminium polyvalent - Faure Technologies, Valence</h4>
+                            <p>
+                                Montage et assemblage de structures aluminium à partir de plans techniques, 
+                                découpe de profilés sur machine de production, raccordements électriques et tests fonctionnels, 
+                                contrôle qualité, conditionnement, logistique et installation d'équipements sur site client.
+                            </p>
+                        </div>
+                        <span class="award-role">Intérim</span>
+                    </div>
+                </div>
             </div>
         </article>
     </div>

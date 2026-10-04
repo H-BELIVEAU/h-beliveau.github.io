@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: var(--space-md) var(--space-xl);
 }
@@ -69,9 +69,11 @@
 
 
 
+
 .nav-controls {
     display: flex;
     align-items: center;
+    gap: var(--space-xs);
     padding: 6px;
     background-color: var(--bg-surface);
     border: 1px solid rgb(148 163 184 / 15%);
@@ -82,9 +84,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 25px;
-    padding: var(--space-3xs) 0;
+    width: 35px;
+    height: 30px;
+    padding: 0;
     color: var(--text-primary);
     background: transparent;
     border: 1px solid transparent;
@@ -106,11 +108,10 @@
     outline-offset: 3px;
 }
 
-/* Icône du thème : SVG */
 .nav-control svg {
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 24px;
+    height: 21px;
 }
 
 #theme-icon {
@@ -119,77 +120,18 @@
     stroke-width: 1.7;
     stroke-linecap: round;
     stroke-linejoin: round;
-    width: 20px;
 }
 
-/* Icône de langue : drapeau SVG */
 #language-icon {
     display: block;
     width: 22px;
-    height: 22px;
+    height: 15px;
     object-fit: contain;
 }
 
-/* Séparateur entre les deux boutons */
 .nav-control-divider {
     width: 1px;
     height: 22px;
     margin: 0 var(--space-2xs);
     background-color: rgb(148 163 184 / 25%);
-}
-
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-controls {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: var(--space-lg);
-    margin-left: var(--space-xl);
-}
-
-
-@media (max-width: 600px) {
-    .nav-container {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-areas:
-            "logo logo"
-            "controls links";
-        align-items: center;
-        gap: var(--space-md);
-    }
-
-    .nav-logo {
-        display: block;
-        grid-area: logo;
-    }
-
-    .nav-controls {
-        grid-area: controls;
-        margin-left: 0;
-    }
-
-    .nav-links {
-        grid-area: links;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: var(--space-lg);
-        margin-left: 0;
-    }
-
-    .nav-links a {
-        font-size: var(--text-sm);
-    }
 }
