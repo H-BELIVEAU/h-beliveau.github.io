@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Découvrez les projets de Hugo Béliveau en programmation, robotique et intelligence artificielle.">
+
+    <title>Projets | Hugo Béliveau</title>
+
+    <link href="../styles/base/reset.css" rel="stylesheet">
+    <link href="../styles/base/variables.css" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/components/nav.css" rel="stylesheet">
+    <link href="../styles/components/footer.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/projects/projects.css">
+
+    <script src="../scripts/projects_filter.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav-container" aria-label="Navigation principale">
+
+        <a class="nav-logo" href="../index.html">
+            H-BELIVEAU<span>.</span>
+        </a>
+
+        <div class="nav-controls">
+            <button id="theme-toggle" class="nav-control"
+                    aria-label="Changer de thème" title="Changer de thème">
+                <img id="theme-icon"
+                     src="assets/icons/moon-svgrepo-com.svg" alt="">
+            </button>
+
+            <span class="nav-control-divider" aria-hidden="true"></span>
+
+            <button id="language-toggle" class="nav-control"
+                    aria-label="Passer en anglais" title="Switch to English">
+                <img id="language-icon"
+                     src="https://kapowaz.github.io/circle-flags/flags/fr.svg"
+                     alt="">
+            </button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main class="projects-page">
+
+    <!-- Introduction -->
+    <section class="projects-hero">
+
+        <p class="section-tag"
+            data-fr="01 — RÉALISATIONS"
+            data-en="01 — PROJECTS">
+            01 — RÉALISATIONS
+        </p>
+
+        <h1 data-fr="Des idées au <span>concret.</span>"
+            data-en="From ideas to <span>reality.</span>">
+            Des idées au <span>concret.</span>
+        </h1>
+
+        <p class="projects-page-intro"
+            data-fr="Programmation, robotique et systèmes intelligents : découvrez les projets à travers lesquels j'explore, j'expérimente et développe mes compétences."
+            data-en="Programming, robotics, and intelligent systems: explore the projects through which I experiment, learn, and develop my skills.">
+            Programmation, robotique et systèmes intelligents :
+            découvrez les projets à travers lesquels j'explore,
+            j'expérimente et développe mes compétences.
+        </p>
+
+    </section>
+
+    <!-- Filtres -->
+    <section class="projects-catalog"
+                aria-label="Catalogue des projets">
+
+        <div class="projects-toolbar">
+
+            <p class="projects-count"
+                data-fr="Mes projets"
+                data-en="My projects">
+                Mes projets
+            </p>
+
+            <div class="project-filters"
+                    role="group"
+                    aria-label="Filtrer les projets">
+
+                <button class="project-filter is-active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                        data-fr="Tous"
+                        data-en="All">
+                    Tous
+                </button>
+
+                <button class="project-filter"
+                        type="button"
+                        data-filter="programming"
+                        aria-pressed="false"
+                        data-fr="Programmation"
+                        data-en="Programming">
+                    Programmation
+                </button>
+
+                <button class="project-filter"
+                        type="button"
+                        data-filter="robotics"
+                        aria-pressed="false"
+                        data-fr="Robotique"
+                        data-en="Robotics">
+                    Robotique
+                </button>
+
+                <button class="project-filter"
+                        type="button"
+                        data-filter="ai"
+                        aria-pressed="false"
+                        data-fr="Intelligence artificielle"
+                        data-en="Artificial intelligence">
+                    Intelligence artificielle
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Grille des projets -->
+        <div class="projects-grid projects-page-grid">
+
+            <!-- Projet 1 -->
+            <article class="project-card"
+                        data-category="programming">
+
+                <a class="project-card-image-link"
+                    href="../projects/projet-1.html"
+                    aria-label="Découvrir le projet Génération procédurale">
+
+                    <img class="project-image"
+                            src="../assets/images/python_sim.png"
+                            alt="Illustration du projet de génération procédurale"
+                            loading="lazy">
+                </a>
+
+                <div class="project-card-content">
+
+                    <p class="project-card-category"
+                        data-fr="PROGRAMMATION · ALGORITHMIQUE"
+                        data-en="PROGRAMMING · ALGORITHMS">
+                        PROGRAMMATION · ALGORITHMIQUE
+                    </p>
+
+                    <h2 data-fr="Génération procédurale"
+                        data-en="Procedural Generation">
+                        Génération procédurale
+                    </h2>
+
+                    <p data-fr="Exploration de techniques algorithmiques pour générer du contenu de manière automatisée."
+                        data-en="Exploring algorithmic techniques to generate content automatically.">
+                        Exploration de techniques algorithmiques
+                        pour générer du contenu de manière automatisée.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span data-fr="Algorithmique"
+                                data-en="Algorithms">Algorithmique</span>
+                    </div>
+
+                    <a class="project-details-link"
+                        href="../projects/projet-1.html"
+                        data-fr="Découvrir le projet ↗"
+                        data-en="Explore project ↗">
+                        Découvrir le projet ↗
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Projet 2 -->
+            <article class="project-card"
+                        data-category="robotics">
+
+                <a class="project-card-image-link"
+                    href="../projects/projet-2.html"
+                    aria-label="Découvrir le projet Robot Sumo">
+
+                    <img class="project-image"
+                            src="../assets/images/ftc.png"
+                            alt="Illustration du projet de robotique"
+                            loading="lazy">
+                </a>
+
+                <div class="project-card-content">
+
+                    <p class="project-card-category"
+                        data-fr="ROBOTIQUE · SYSTÈMES EMBARQUÉS"
+                        data-en="ROBOTICS · EMBEDDED SYSTEMS">
+                        ROBOTIQUE · SYSTÈMES EMBARQUÉS
+                    </p>
+
+                    <h2 data-fr="Robot Sumo"
+                        data-en="Sumo Robot">
+                        Robot Sumo
+                    </h2>
+
+                    <p data-fr="Conception et programmation d'un robot autonome, à l'interface entre logiciel et matériel."
+                        data-en="Designing and programming an autonomous robot at the intersection of software and hardware.">
+                        Conception et programmation d'un robot
+                        autonome, à l'interface entre logiciel et matériel.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C / C++</span>
+                        <span data-fr="Robotique"
+                                data-en="Robotics">Robotique</span>
+                        <span data-fr="Embarqué"
+                                data-en="Embedded">Embarqué</span>
+                    </div>
+
+                    <a class="project-details-link"
+                        href="../projects/projet-2.html"
+                        data-fr="Découvrir le projet ↗"
+                        data-en="Explore project ↗">
+                        Découvrir le projet ↗
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Projet 3 -->
+            <article class="project-card"
+                        data-category="ai">
+
+                <div class="project-card-image-link">
+
+                    <img class="project-image"
+                            src="../assets/images/NeuralNetwork.png"
+                            alt="Illustration d'un réseau de neurones"
+                            loading="lazy">
+                </div>
+
+                <div class="project-card-content">
+
+                    <p class="project-card-category"
+                        data-fr="INTELLIGENCE ARTIFICIELLE · SIMULATION"
+                        data-en="ARTIFICIAL INTELLIGENCE · SIMULATION">
+                        INTELLIGENCE ARTIFICIELLE · SIMULATION
+                    </p>
+
+                    <h2 data-fr="Réseaux de neurones"
+                        data-en="Neural Networks">
+                        Réseaux de neurones
+                    </h2>
+
+                    <p data-fr="Exploration des réseaux de neurones et de leur capacité à apprendre à partir de données."
+                        data-en="Exploring neural networks and their ability to learn from data.">
+                        Exploration des réseaux de neurones
+                        et de leur capacité à apprendre à partir de données.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>IA / AI</span>
+                        <span data-fr="Simulation"
+                                data-en="Simulation">Simulation</span>
+                    </div>
+
+                    <span class="project-details-link project-coming-soon"
+                            data-fr="Détails à venir"
+                            data-en="Details coming soon">
+                        Détails à venir
+                    </span>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="projects-cta">
+
+        <p class="section-tag"
+            data-fr="ET MAINTENANT ?"
+            data-en="WHAT'S NEXT?">
+            ET MAINTENANT ?
+        </p>
+
+        <h2 data-fr="Construisons la suite<span>.</span>"
+            data-en="Let's build what's next<span>.</span>">
+            Construisons la suite<span>.</span>
+        </h2>
+
+        <p data-fr="Une question sur un projet ou une opportunité de collaboration ?"
+            data-en="Have a question about a project or a potential collaboration?">
+            Une question sur un projet ou une opportunité de collaboration ?
+        </p>
+
+        <a class="contact-link"
+            href="contact.html"
+            data-fr="Me contacter <span>↗</span>"
+            data-en="Get in touch <span>↗</span>">
+            Me contacter <span>↗</span>
+        </a>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <a class="footer-logo" href="../index.html">
+        H-BELIVEAU<span>.</span>
+    </a>
+
+    <p data-fr="© 2026 Hugo Béliveau · Portfolio personnel"
+       data-en="© 2026 Hugo Béliveau · Personal portfolio">
+        © 2026 Hugo Béliveau · Portfolio personnel
+    </p>
+
+    <a href="contact.html">Contact ↗</a>
+</footer>
+
+</body>
+</html>

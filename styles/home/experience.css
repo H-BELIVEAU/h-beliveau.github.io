@@ -183,7 +183,6 @@
 
 @media (max-width: 600px) {
     .experience-item {
-        grid-template-columns: 32px 1fr;
         gap: var(--space-md);
         padding: var(--space-lg) var(--space-xs);
     }
