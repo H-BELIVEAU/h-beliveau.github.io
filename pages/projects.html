@@ -16,8 +16,12 @@
     <link href="../styles/components/footer.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/projects/projects.css">
+    <link rel="stylesheet" href="../styles/home/contact.css">
 
     <script src="../scripts/projects_filter.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+    
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
 </head>
 
 <body>
@@ -33,7 +37,7 @@
             <button id="theme-toggle" class="nav-control"
                     aria-label="Changer de thème" title="Changer de thème">
                 <img id="theme-icon"
-                     src="assets/icons/moon-svgrepo-com.svg" alt="">
+                     src="../assets/icons/moon-svgrepo-com.svg" alt="">
             </button>
 
             <span class="nav-control-divider" aria-hidden="true"></span>
@@ -57,7 +61,6 @@
 
 <main class="projects-page">
 
-    <!-- Introduction -->
     <section class="projects-hero">
 
         <p class="section-tag"
@@ -179,7 +182,7 @@
                     </div>
 
                     <a class="project-details-link"
-                        href="../projects/projet-1.html"
+                        href="../projects/p-0000/project.html"
                         data-fr="Découvrir le projet ↗"
                         data-en="Explore project ↗">
                         Découvrir le projet ↗
@@ -230,7 +233,7 @@
                     </div>
 
                     <a class="project-details-link"
-                        href="../projects/projet-2.html"
+                        href="../projects/p-0000/project.html"
                         data-fr="Découvrir le projet ↗"
                         data-en="Explore project ↗">
                         Découvrir le projet ↗
@@ -271,7 +274,8 @@
                     </p>
 
                     <div class="project-tags">
-                        <span>IA / AI</span>
+                        <span data-fr="IA"
+                                data-en="AI">IA</span>
                         <span data-fr="Simulation"
                                 data-en="Simulation">Simulation</span>
                     </div>
@@ -302,7 +306,7 @@
             Construisons la suite<span>.</span>
         </h2>
 
-        <p data-fr="Une question sur un projet ou une opportunité de collaboration ?"
+        <p class="contact-description" data-fr="Une question sur un projet ou une opportunité de collaboration ?"
             data-en="Have a question about a project or a potential collaboration?">
             Une question sur un projet ou une opportunité de collaboration ?
         </p>

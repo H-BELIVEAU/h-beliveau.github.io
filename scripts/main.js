@@ -7,11 +7,9 @@ const themeIcon = document.querySelector("#theme-icon");
 const languageButton = document.querySelector("#language-toggle");
 const languageIcon = document.querySelector("#language-icon");
 
-const is_home = document.querySelector("title").textContent == 'Portfolio — Hugo Béliveau';
-const path = is_home? "" : "../"; 
+const path = "../".repeat(document.location.pathname.split("/").length - 2); 
 
-console.log(is_home);
-console.log(path);
+console.log("path: "+path);
 
 
 // ==========================================
