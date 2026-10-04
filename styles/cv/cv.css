@@ -1,0 +1,110 @@
+/* PAGE CV */
+
+.cv-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 110px var(--space-xl) var(--space-xl);
+}
+
+.cv-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.cv-heading .section-tag {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+}
+
+.cv-heading h1 {
+    margin-top: var(--space-xs);
+    font-size: var(--text-2xl);
+    letter-spacing: -0.03em;
+}
+
+.cv-heading h1 span {
+    color: var(--color-accent);
+}
+
+
+/* BOUTON DE TÉLÉCHARGEMENT */
+
+.cv-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-md) var(--space-lg);
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        background-color 180ms ease;
+}
+
+.cv-download:hover {
+    color: var(--bg-main);
+    background-color: var(--color-accent);
+}
+
+.cv-download svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+
+/* APERÇU DU PDF */
+
+.cv-viewer {
+    width: 100%;
+    height: 75vh;
+    min-height: 500px;
+    overflow: hidden;
+    background-color: var(--bg-surface);
+    border: 1px solid rgb(148 163 184 / 20%);
+    border-radius: var(--radius-md);
+}
+
+.cv-viewer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .cv-main {
+        padding: 110px var(--space-md) var(--space-xl);
+    }
+
+    .cv-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cv-viewer {
+        height: 75vh;
+        min-height: 450px;
+    }
+}

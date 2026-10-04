@@ -1,0 +1,111 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV — Hugo Béliveau</title>
+
+    <link href="../styles/base/reset.css" rel="stylesheet">
+    <link href="../styles/base/variables.css" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/components/nav.css" rel="stylesheet">
+    <link href="../styles/components/footer.css" rel="stylesheet">
+
+    <link href="../styles/cv/cv.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav-container" aria-label="Navigation principale">
+
+        <a class="nav-logo" href="../index.html">
+            H-BELIVEAU<span>.</span>
+        </a>
+
+        <div class="nav-controls">
+            <button id="theme-toggle" class="nav-control"
+                    aria-label="Changer de thème"
+                    title="Changer de thème">
+                <img id="theme-icon"
+                     src="../assets/icons/moon-svgrepo-com.svg" alt="">
+            </button>
+
+            <span class="nav-control-divider" aria-hidden="true"></span>
+
+            <button id="language-toggle" class="nav-control"
+                    aria-label="Passer en anglais"
+                    title="Switch to English">
+                <img id="language-icon"
+                     src="https://kapowaz.github.io/circle-flags/flags/fr.svg"
+                     alt="">
+            </button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+            <li><a href="cv.html" aria-current="page">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="cv-main">
+
+    <section class="cv-toolbar">
+
+        <div class="cv-heading">
+            <p class="section-tag" data-fr="DOCUMENT PROFESSIONNEL" data-en="PROFESSIONNAL DOCUMENT">DOCUMENT PROFESSIONNEL</p>
+            <h1 data-fr="Mon CV<span>.</span>" data-en="My CV<span>.</span>">Mon CV<span>.</span></h1>
+        </div>
+
+        <a class="cv-download"
+           href="../assets/CV-Hugo-Beliveau.pdf"
+           download="CV-Hugo-Beliveau.pdf">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m-5-5 5 5 5-5"/>
+                <path d="M5 17v3h14v-3"/>
+            </svg>
+
+            <span data-fr="Télécharger le PDF" data-en="Download PDF">Télécharger le PDF</span>
+        </a>
+
+    </section>
+
+
+    <section class="cv-viewer" aria-label="Aperçu du CV">
+
+        <iframe
+            src="../assets/CV-Hugo-Beliveau.pdf"
+            title="CV de Hugo Béliveau"
+            loading="eager">
+        </iframe>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <a class="footer-logo" href="../index.html">
+        H-BELIVEAU<span>.</span>
+    </a>
+
+    <p data-fr="© 2026 Hugo Béliveau · Portfolio personnel"
+       data-en="© 2026 Hugo Béliveau · Personal portfolio">
+        © 2026 Hugo Béliveau · Portfolio personnel
+    </p>
+
+    <a href="contact.html">Contact ↗</a>
+</footer>
+
+
+<script src="../scripts/main.js" defer></script>
+
+</body>
+</html>
