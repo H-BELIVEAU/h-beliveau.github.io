@@ -7,6 +7,12 @@ const themeIcon = document.querySelector("#theme-icon");
 const languageButton = document.querySelector("#language-toggle");
 const languageIcon = document.querySelector("#language-icon");
 
+const is_home = document.querySelector("title").textContent == 'Portfolio — Hugo Béliveau';
+const path = is_home? "" : "../"; 
+
+console.log(is_home);
+console.log(path);
+
 
 // ==========================================
 // 2. GESTION DU THÈME CLAIR / SOMBRE
@@ -18,11 +24,11 @@ function setTheme(theme) {
     if (theme === "dark") {
         themeIcon.setAttribute("aria-label", "Activer le thème clair");
         themeIcon.setAttribute("title", "Activer le thème clair");
-        themeIcon.src = "assets/icons/moon-svgrepo-com.svg";
+        themeIcon.src = path+"assets/icons/moon-svgrepo-com.svg";
     } else {
         themeIcon.setAttribute("aria-label", "Activer le thème sombre");
         themeIcon.setAttribute("title", "Activer le thème sombre");
-        themeIcon.src = "assets/icons/sun-svgrepo-com.svg";
+        themeIcon.src = path+"assets/icons/sun-svgrepo-com.svg";
     }
 
     localStorage.setItem("theme", theme);

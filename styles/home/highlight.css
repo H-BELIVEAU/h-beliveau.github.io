@@ -1,0 +1,23 @@
+.highlight {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    align-items: center;
+}
+
+.highlight-number {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+}
+
+.highlight h4 {
+    margin-bottom: var(--space-2xs);
+}
+
+.highlight p {
+    font-size: var(--text-sm);
+}
+

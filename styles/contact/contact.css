@@ -1,0 +1,388 @@
+/* ========================================
+   STRUCTURE GÉNÉRALE
+======================================== */
+
+.contact-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1 0 auto;
+    min-height: 0;
+    padding: 100px var(--space-xl) 24px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: clamp(3rem, 7vw, 7rem);
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.contact-intro {
+    max-width: 520px;
+}
+
+.contact-intro .section-tag {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+}
+
+.contact-intro h1 {
+    margin-top: var(--space-lg);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.contact-intro h1 span {
+    color: var(--color-accent);
+}
+
+.contact-description {
+    max-width: 420px;
+    margin-top: var(--space-xl);
+    color: var(--color-slate-50);
+    font-size: var(--text-base);
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   BOUTON PRINCIPAL
+======================================== */
+
+.contact-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+    padding: var(--space-md) var(--space-lg);
+    color: var(--bg-main);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        transform 180ms ease;
+}
+
+.contact-primary:hover {
+    color: var(--color-accent);
+    background-color: transparent;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   DISPONIBILITÉ
+======================================== */
+
+.contact-availability {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-xl);
+    color: var(--color-slate-50);
+    font-size: var(--text-xs);
+}
+
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(34 197 94 / 30%);
+}
+
+
+/* ========================================
+   PANNEAU DE CONTACT
+======================================== */
+
+.contact-panel {
+    min-width: 0;
+    padding: var(--space-lg);
+    background-color: var(--bg-surface);
+    border: 1px solid rgb(148 163 184 / 15%);
+    border-radius: var(--radius-lg);
+}
+
+.contact-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid rgb(148 163 184 / 20%);
+}
+
+.contact-panel-label,
+.contact-panel-index {
+    color: var(--color-slate-50);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+}
+
+.contact-panel-index {
+    color: var(--color-accent);
+}
+
+
+/* ========================================
+   COORDONNÉES
+======================================== */
+
+.contact-entry {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-width: 0;
+    padding: var(--space-md) 0;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgb(148 163 184 / 15%);
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.contact-entry[href]:hover {
+    color: var(--color-accent);
+}
+
+.contact-entry-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: var(--color-accent);
+    background-color: var(--bg-main);
+    border: 1px solid rgb(148 163 184 / 12%);
+    border-radius: var(--radius-md);
+}
+
+.contact-entry-icon svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.contact-entry-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xs);
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-entry-label {
+    color: var(--color-slate-50);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+}
+
+.contact-entry-value {
+    overflow-wrap: anywhere;
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+
+.contact-entry-arrow {
+    flex-shrink: 0;
+    color: var(--color-accent);
+    font-size: var(--text-lg);
+}
+
+
+/* ========================================
+   RÉSEAUX SOCIAUX
+======================================== */
+
+.contact-socials {
+    padding-top: var(--space-lg);
+}
+
+.contact-socials-title {
+    margin-bottom: var(--space-md);
+    color: var(--color-slate-50);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-xs);
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-md);
+    color: var(--text-primary);
+    background-color: var(--bg-main);
+    border: 1px solid rgb(148 163 184 / 12%);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        border-color 180ms ease;
+}
+
+.social-links a span {
+    color: var(--color-accent);
+}
+
+.social-links a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+
+/* ========================================
+   ACCESSIBILITÉ
+======================================== */
+
+.contact-main a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+
+/* ========================================
+   PC : UNE SEULE PAGE, SANS SCROLL
+======================================== */
+
+@media (min-width: 801px) and (min-height: 650px) {
+    body:has(.contact-main) {
+        height: 100vh;
+        height: 100svh;
+        overflow: hidden;
+    }
+}
+
+
+/* ========================================
+   TABLETTES ET PETITS ÉCRANS
+======================================== */
+
+@media (max-width: 800px) {
+    .contact-main {
+        padding: 120px var(--space-lg) var(--space-2xl);
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        max-width: 600px;
+    }
+
+    .contact-intro {
+        max-width: none;
+    }
+
+    .contact-intro h1 {
+        font-size: clamp(2.8rem, 8vw, 4rem);
+    }
+
+    .contact-description {
+        margin-top: var(--space-lg);
+    }
+}
+
+
+/* ========================================
+   TÉLÉPHONES
+======================================== */
+
+@media (max-width: 480px) {
+    .contact-main {
+        padding: 110px var(--space-md) var(--space-xl);
+    }
+
+    .contact-layout {
+        gap: var(--space-xl);
+    }
+
+    .contact-intro h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .contact-panel {
+        padding: var(--space-md);
+    }
+
+    .contact-entry {
+        gap: var(--space-xs);
+    }
+
+    .contact-entry-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-entry-value {
+        font-size: var(--text-sm);
+    }
+}
+
+/* Structure verticale de la page */
+body:has(.contact-main) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+
+.site-footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.social-link > img {
+    display: block;
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px;
+    min-height: 22px;
+    max-width: 22px;
+    max-height: 22px;
+    flex: 0 0 22px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xs);
+    }
+}

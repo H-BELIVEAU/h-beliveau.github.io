@@ -1,0 +1,41 @@
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem var(--space-xl);
+    text-align: center;
+}
+
+.contact h2 {
+    margin-top: var(--space-lg);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.contact h2 span {
+    color: var(--color-accent);
+}
+
+.contact-description {
+    max-width: 550px;
+    margin: var(--space-lg) auto 0;
+    line-height: 1.7;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+    padding: var(--space-md) var(--space-xl);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.contact-link:hover {
+    background-color: var(--color-accent);
+    color: var(--bg-main);
+}
