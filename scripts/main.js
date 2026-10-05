@@ -9,8 +9,6 @@ const languageIcon = document.querySelector("#language-icon");
 
 const path = "../".repeat(document.location.pathname.split("/").length - 2); 
 
-console.log("path: "+path);
-
 
 // ==========================================
 // 2. GESTION DU THÈME CLAIR / SOMBRE
