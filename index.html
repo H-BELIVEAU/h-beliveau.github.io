@@ -8,21 +8,22 @@
     <link href="styles/base/reset.css" rel="stylesheet">
     <link href="styles/base/variables.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/components/nav.css" rel="stylesheet">
-    <link href="styles/components/footer.css" rel="stylesheet">
 
     <link href="styles/home/hero.css" rel="stylesheet">
     <link href="styles/home/projects.css" rel="stylesheet">
     <link href="styles/home/about.css" rel="stylesheet">
-    <link href="styles/home/highlight.css" rel="stylesheet">
     <link href="styles/home/experience.css" rel="stylesheet">
+    <link href="styles/home/highlight.css" rel="stylesheet">
     <link href="styles/home/visual-break.css" rel="stylesheet">
+    <link href="styles/home/about.css" rel="stylesheet">
     <link href="styles/home/contact.css" rel="stylesheet">
+
+    <link href="styles/components/nav.css" rel="stylesheet">
+    <link href="styles/components/footer.css" rel="stylesheet">
 
     <script src="scripts/main.js" defer></script>
 
     <link rel="icon" type="image/png" href="assets/icons/logo.png">
-
     <meta property="og:title" content="Portfolio - Hugo BELIVEAU" />
     <meta property="og:description" content="Engineer Student
     2nd year at ESISAR – Grenoble INP
@@ -55,7 +56,7 @@
             <button id="theme-toggle" class="nav-control"
                     aria-label="Changer de thème" title="Changer de thème">
                 <img id="theme-icon"
-                     src="assets/icons/moon-svgrepo-com.svg" alt="">
+                     src="../assets/icons/moon-svgrepo-com.svg" alt="">
             </button>
 
             <span class="nav-control-divider" aria-hidden="true"></span>
@@ -78,8 +79,8 @@
 </header>
 
 <main>
-    
-<section class="hero">
+
+    <section class="hero">
     <div class="hero-portrait-container">
         <img class="hero-portrait"
              src="assets/images/compressed/portrait.jpg"
@@ -126,7 +127,7 @@
     <h2 data-fr="Projets<span>.</span>"
         data-en="Projects<span>.</span>">
         Projets<span>.</span>
-    </h2>
+    </h2>    
 
     <p class="projects-intro"
        data-fr="Quelques projets qui illustrent mes compétences."
@@ -136,24 +137,26 @@
 
     <div class="projects-grid">
         <article class="project-card">
-            <a href="projects/p-0000/project.html" class="project-card-link" aria-label="Découvrir le projet Génération procédurale">
+            <a href="projects/p-0001/project.html" class="project-card-link" aria-label="Découvrir les réseaux de neurones en C.">
                 <img class="project-image"
-                    src="assets/images/compressed/python_sim.png"
-                    alt="Illustration du projet informatique">
+                    src="assets/images/nn_network.svg"
+                    alt="Illustration de réseaux de neurones">
 
-                <h3 data-fr="Génération procédurale"
-                    data-en="Procedural Generation">
-                    Génération procédurale
+                <h3 data-fr="Réseau de Neurone en C"
+                    data-en="Neural Network C">
+                    Réseau de Neurone en C
                 </h3>
 
-                <p data-fr="Un projet mettant en œuvre mes compétences en programmation et en conception logicielle."
-                data-en="A project showcasing my programming and software design skills.">
-                    Un projet mettant en œuvre mes compétences en programmation et en conception logicielle.
+                <p  data-fr="Introduction aux réseaux de neurones artificiels et programmation d'un framework en C99 de A à Z."
+                    data-en="An introduction to neural networks and programmation of a C99 framework from scratch.">
+                    Introduction aux réseaux de neurones artificiels et programmation d'un framework en C99 de A à Z.
                 </p>
 
                 <div class="project-tags">
-                    <span>Python</span>
+                    <span data-fr="Mathématiques" data-en="Mathematics">Mathématiques</span>
                     <span data-fr="Algorithmique" data-en="Algorithms">Algorithmique</span>
+                    <span data-fr="IA" data-en="AI">IA</span>
+                    <span>C</span>
                 </div>
             </a>
         </article>

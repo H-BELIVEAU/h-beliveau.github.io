@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+
+    <title>Neural Network - H-BELIVEAU</title>
+
+    <link href="../../styles/base/reset.css" rel="stylesheet">
+    <link href="../../styles/base/variables.css" rel="stylesheet">
+    <link href="../../styles/main.css" rel="stylesheet">
+    <link href="../../styles/components/nav.css" rel="stylesheet">
+    <link href="../../styles/components/footer.css" rel="stylesheet">
+    <link href="../../styles/contact/contact.css" rel="stylesheet">
+    
+    <link href="../../styles/projects/project.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../../assets/icons/logo.png">
+
+    <meta property="og:title" content="Portfolio - Hugo BELIVEAU" />
+    <meta property="og:description" content="Engineer Student
+    2nd year at ESISAR – Grenoble INP
+    Portolio in English / Portfolio en Français" />
+    <meta property="og:image" content="https://h-beliveau.github.io/assets/images/image_presentation.png" />
+    <meta property="og:url" content="https://h-beliveau.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="h-beliveau.github">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://h-beliveau.github.io/assets/images/image_presentation.png">
+    <meta property="article:author" content="h-beliveau.github">
+    <meta property="article:published_time" content="2026-10-04T20:37:58.434Z">
+    <meta property="og:image" content="https://h-beliveau.github.io/assets/images/image_presentation.png">
+
+    <!-- 1. CSS de KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+
+    <!-- 2. Script principal KaTeX -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+
+    <!-- 3. Extension d'auto-rendu automatique -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+        ]
+        });">
+    </script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav-container" aria-label="Navigation principale">
+
+        <a class="nav-logo" href="../../index.html">
+            H-BELIVEAU<span>.</span>
+        </a>
+
+        <div class="nav-controls">
+            <button id="theme-toggle" class="nav-control"
+                    aria-label="Changer de thème"
+                    title="Changer de thème">
+                <img id="theme-icon"
+                     src="../../assets/icons/moon-svgrepo-com.svg" alt="">
+            </button>
+
+            <span class="nav-control-divider" aria-hidden="true"></span>
+
+            <button id="language-toggle" class="nav-control"
+                    aria-label="Passer en anglais"
+                    title="Switch to English">
+                <img id="language-icon"
+                     src="https://kapowaz.github.io/circle-flags/flags/fr.svg"
+                     alt="">
+            </button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../../pages/projects.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+            <li><a href="../../pages/cv.html">CV</a></li>
+            <li><a href="../../pages/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main class="project-detail">
+
+    <!-- =========================================
+            FIL D'ARIANE
+    ========================================== -->
+
+    <nav class="project-breadcrumb"
+            aria-label="Fil d'Ariane">
+
+        <a href="../index.html#projets"
+            data-fr="Projets"
+            data-en="Projects">
+            Projets
+        </a>
+
+        <span aria-hidden="true">/</span>
+
+        <span aria-current="page"
+                data-fr="Réseau de neurone en C"
+                data-en="Neural Network in C">
+            Réseau de neurone en C
+        </span>
+
+    </nav>
+
+
+    <!-- =========================================
+            EN-TÊTE DU PROJET
+    ========================================== -->
+
+    <section class="project-hero">
+
+        <h1 data-fr="Réseau de neurone en C<span>.</span>"
+            data-en="Neural Network in C<span>.</span>">
+            Réseau de neurone en C<span>.</span>
+        </h1>
+
+        <p class="project-lead"
+            data-fr="Conception et Implémentation d'un framework de Deep Learning From Scratch en C99."
+            data-en="Conception and Implementation of a Deep Learning's Framework From Scratch with C99.">
+            Conception et implémentation d'un framework de Deep Learning From Scratch en C99.
+        </p>
+
+        <div class="project-tags">
+            <span>C99</span>
+            <span data-fr="Algorithme" data-en="Algorithmics">Algorithmique</span>
+            <span data-fr="IA" data-en="AI">IA</span>
+        </div>
+
+        <div class="project-meta">
+
+            <div class="project-meta-item">
+                <span class="project-meta-label">
+                    TYPE
+                </span>
+
+                <span data-fr="Projet personnel"
+                        data-en="Personal project">
+                    Projet personnel
+                </span>
+            </div>
+
+            <div class="project-meta-item">
+                <span class="project-meta-label"
+                        data-fr="TECHNOLOGIES"
+                        data-en="TECHNOLOGIES">
+                    TECHNOLOGIES
+                </span>
+
+                <span>C99</span>
+            </div>
+
+            <div class="project-meta-item">
+                <span class="project-meta-label"
+                        data-fr="STATUT"
+                        data-en="STATUS">
+                    STATUT
+                </span>
+
+                <span data-fr="Terminé"
+                        data-en="Completed">
+                    Terminé
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+            IMAGE PRINCIPALE
+    ========================================== -->
+
+    <figure class="project-cover">
+
+        <img src="../../assets/images/compressed/large_planet.jpg"
+                alt="Visualisation du projet de génération procédurale"
+                fetchpriority="high">
+
+        <figcaption
+            data-fr="Aperçu du projet — à remplacer par une légende pertinente."
+            data-en="Project overview — replace with a relevant caption.">
+            Aperçu du projet — à remplacer par une légende pertinente.
+        </figcaption>
+
+    </figure>
+
+
+    <!-- =========================================
+            CONTENU DU PROJET
+    ========================================== -->
+
+    <div class="project-content">
+
+        <!-- Présentation -->
+
+        <section class="project-section">
+
+            <p class="section-tag"
+                data-fr="01 — CONTEXTE"
+                data-en="01 — CONTEXT">
+                01 — CONTEXTE
+            </p>
+
+            <h2 data-fr="Le projet<span>.</span>"
+                data-en="The project<span>.</span>">
+                Le projet<span>.</span>
+            </h2>
+
+            <p
+                data-fr="Depuis le lycée, j'ai déjà expérimenté plus jeune des petits projets de réseaux de neurones, mais toujours en Python. 
+                J'essayais, avec mon faible niveau mathématique de comprendre comment ça fonctionnait, mais pendant longtemps,
+                j'ai du accepter de m'abroger de comprendre absolument chaque concepts. Pour concevoir de futurs projets personnels
+                (simulations, systèmes autonomes, moteurs de jeux, etc..), j'ai besoin de réussir à construire moi-même mon propre
+                framework autonome de A à Z. "
+                data-en="Introduce the project: why did you build it, what was your objective, and what problem were you trying to solve?$u_C(t)=10V$.">
+                Depuis le lycée, j'ai déjà expérimenté plus jeune des petits projets de réseaux de neurones, mais toujours en Python. 
+                J'essayais, avec mon faible niveau mathématique de comprendre comment ça fonctionnait, mais pendant longtemps,
+                j'ai du accepter de m'abroger de comprendre absolument chaque concepts. Pour concevoir de futurs projets personnels
+                (simulations, systèmes autonomes, moteurs de jeux, etc..), j'ai besoin de réussir à construire moi-même mon propre
+                framework autonome de A à Z. 
+            </p>
+
+        </section>
+
+
+        <!-- Objectifs -->
+
+        <section class="project-section">
+
+            <p class="section-tag"
+                data-fr="02 — OBJECTIFS"
+                data-en="02 — OBJECTIVES">
+                02 — OBJECTIFS
+            </p>
+
+            <h2 data-fr="Le problème à résoudre<span>.</span>"
+                data-en="The challenge<span>.</span>">
+                Le problème à résoudre<span>.</span>
+            </h2>
+
+            <p
+                data-fr="Décris les objectifs principaux et les contraintes à respecter. Privilégie des objectifs précis et concrets."
+                data-en="Describe the main objectives and constraints. Focus on specific, concrete goals.">
+                Le cahier des charges de ce framework s'articule autour de quatre piliers :
+            </p>
+
+            <ul class="project-list">
+
+                <li
+                    data-fr="Objectif principal du projet."
+                    data-en="Main project objective.">
+                    <strong>Zéro dépendance externes :</strong> Ecriture en C pur, reposant uniquement sur la bibliothèque standard ("&lt;stdlib.h&gt;", "&lt;math.h&gt;", etc.).
+                </li>
+
+                <li
+                    data-fr="Contrainte technique ou algorithmique."
+                    data-en="Technical or algorithmic constraint.">
+                    <strong>Réutilisabilité et modularité :</strong> Offrir une API claire et découplée pour intégrer facilement des réseaux de neurones dans d'autres applications.
+                </li>
+
+                <li
+                    data-fr="Résultat attendu ou critère de réussite."
+                    data-en="Expected result or success criterion.">
+                    <strong>Double paradigme d'apprentissage :</strong> Supporter à la fois l'apprentissage supervidé par gradient (avec la rétropropagation) et l'optimisation sans gradient par l'algorithme génétique.
+                </li>
+
+                <li
+                    data-fr="Résultat attendu ou critère de réussite."
+                    data-en="Expected result or success criterion.">
+                    <strong>Rigueur système :</strong> Assurer une gestion stricte de la mémoire (absence totale de fuites) et une persistance binaire robuste des modèles.
+                </li>
+
+            </ul>
+
+            <p>
+                Au final, l'objectif est vraiment de coder une fois pour toute tout ce dont j'aurais besoin pour réaliser mes prochains projets sans avoir à reconstruire la structure des réseaux de neurones, donc avoir un maximum de stabilité et de modularité.
+            </p>
+
+        </section>
+
+
+        <!-- Réalisation -->
+
+        <section class="project-section">
+
+            <p class="section-tag"
+                data-fr="03 — RÉALISATION"
+                data-en="03 — IMPLEMENTATION">
+                03 — RÉALISATION
+            </p>
+
+            <h2 data-fr="L'approche technique<span>.</span>"
+                data-en="The technical approach<span>.</span>">
+                Fondations théoriques et mathématiques<span>.</span>
+            </h2>
+
+            <p
+                data-fr="Explique comment tu as conçu et développé la solution. Présente les choix d'architecture, les algorithmes utilisés et les difficultés rencontrées."
+                data-en="Explain how you designed and developed the solution. Describe your architectural decisions, algorithms and the challenges you encountered.">
+                Le Perceptron a été créé en 1957 par Frank Rosenblatt, un psychologue et chercheur américain, avec comme
+                objectif principal de modéliser le fonctionnement du cerveau humain pour comprendre comment nous appronons, percevons notre environnement
+                et prenons des décisions. Rosenblatt souhaitait concevoir une machine capable d'apprendre par elle-même, sans que
+                chaque règle ne soit codée à la main.
+            </p>
+
+            <p
+                data-fr="Explique comment tu as conçu et développé la solution. Présente les choix d'architecture, les algorithmes utilisés et les difficultés rencontrées."
+                data-en="Explain how you designed and developed the solution. Describe your architectural decisions, algorithms and the challenges you encountered.">
+                A l'époque, les neurosciences commençaient à comprendre le fonctionnement des neurones. Le perceptron a été conçu comme un neurone artificiel.
+                Tout comme un neurone biologique reçoit des signaux électriques de ses dentrites et décide ou non de transmettre l'information,
+                le Perceptron reçoit plusieurs entrées, attribue une importance à chaque entrée (un poids), fait la somme de ces données et applique un seuil
+                pour donner un résultat (0 ou 1, "oui" ou "non").
+            </p>
+
+            <p
+                data-fr="Explique comment tu as conçu et développé la solution. Présente les choix d'architecture, les algorithmes utilisés et les difficultés rencontrées."
+                data-en="Explain how you designed and developed the solution. Describe your architectural decisions, algorithms and the challenges you encountered.">
+                Le premier perceptron (baptisé Mark I Perceptron) était une machine physique reliée à une caméra de 400 pixels, qui a été créé spécifiquement pour 
+                reconnaître des formes géométriques simples et des lettres de l'alphabet, peu importe leur orientation ou leur taille. Avant le Perceptron, les ordinateurs
+                étaient purement déterministes : ils exécutaient des règles dans un ordre strict. La grande révolution du Perceptron résidait dans sa règle d'apprentissage.
+                Si la machine se trompait de forme, un algorithme ajustait automatiquement les paramètres du réseau, jusqu'à ce qu'elle trouve la bonne réponse. C'était
+                la naissance de l'apprentissage supervisé.
+            </p>
+
+            <h3 data-fr="Choix techniques"
+                data-en="Technical decisions">
+                Alors, comment ça marche concrètement un Perceptron ?
+            </h3>
+
+            <p
+                data-fr="Justifie les technologies et les méthodes retenues. Explique pourquoi elles étaient adaptées au problème."
+                data-en="Justify your choice of technologies and methods. Explain why they were suited to the problem.">
+                Nous pouvons définir un Perceptron comme une fonction qui prend comme entrée un vecteur colone $x=[x_1, x_2, \dots, x_n]^T$, 
+                auquel on applique le scalaire d'un vecteur de poids $w=[w_1, w_2, \dots, w_n]$, ajoute un biais $b$,
+                puis applique une fonction de seuil pour renvoyer un résultat binaire, 0 ou 1.<br>
+                Concrètement, on arrive aux formule suivantes :
+                $$ z=\sum_{i=1}^n{w_ix_i}+b = w^Tx+b$$ puis
+                $$ \^y=a(z)=\left\{1 si z>=0\\ 0 sinon\right. $$
+            </p>
+
+            <p
+                data-fr="Justifie les technologies et les méthodes retenues. Explique pourquoi elles étaient adaptées au problème."
+                data-en="Justify your choice of technologies and methods. Explain why they were suited to the problem.">
+                Tout le problème du Perceptron est donc de trouver les bons paramètres $w_i$ et $b$ qui permettent de toujours prédire la bonne sortie.
+                C'est tout le rôle de l'apprentissage : ajuster les poids et biais à partir de l'erreur en sortie.
+                On commence donc par calculer l'erreur, qui est définie par la différence entre la sortie atendue et la prédiction $\epsilon=y-\^y$.
+                Ensuite on applique la mise à jour suivante (avec $\alpha$ le taux d'apprentissage) :
+                $$ w_i <- w_i + \alpha\epsilon.x_i && b_i <- b_i + \alpha\epsilon $$
+                Sans aller pour l'instant précisemment dans les calculs, l'idée est de faire évoluer chaque paramètres dans la direction qui minimise l'erreur.
+            </p>
+
+            <h3 data-fr="Difficultés rencontrées"
+                data-en="Challenges encountered">
+                La limite du perceptron
+            </h3>
+
+            <p
+                data-fr="Mets en avant une ou deux difficultés concrètes et explique comment tu les as résolues. C'est souvent ici que tu montres le mieux tes compétences d'ingénieur."
+                data-en="Highlight one or two concrete challenges and explain how you solved them. This is often where you best demonstrate your engineering skills.">
+                Démontré par Rosenblatt, ce théorème garantit que si les données sont linéairement séparables, l'algorithme va converger et trouver une solution parfaite
+                en un nombre fini d'étapes. Si les données ne le sont pas (comme la porte XOR), l'algorithme boucle à l'infini sans jamais trouver de solution.
+            </p>
+
+            <h3 data-fr="Difficultés rencontrées"
+                data-en="Challenges encountered">
+                Le passage aux réseaux de neurones (MLP)
+            </h3>
+
+            <p
+                data-fr="Mets en avant une ou deux difficultés concrètes et explique comment tu les as résolues. C'est souvent ici que tu montres le mieux tes compétences d'ingénieur."
+                data-en="Highlight one or two concrete challenges and explain how you solved them. This is often where you best demonstrate your engineering skills.">
+                Afin de briser la limite des problèmes non linéaires, les chercheurs ont décidés de complexifier la structure, en imbriquant plusieurs couches de neurones artificiels.
+                Mais simplement imbriquer plusieurs couches de Perceptrons pose un problème clair : il est impossible de savoir de combien chaque neurone est responsable de l'erreur finale,
+                et donc rend impossible l'apprentissage. Pour résoudre ce problème, il a fallu remplacer la fonction de seuil d'Heaviside par des fonctions d'activations non linéaires et dérivables,
+                comme la fonction sigmoïde ou la fonction ReLU. Désormais, la sortie n'est plus un choix binaire strict (0 ou 1), mais une valeur continue (comme par exemple 0.72), ce qui permet 
+                également d'indiquer un degré de certitude et surtout de calculer des gradients pour déterminer l'erreur sur chaque neurones.
+            </p>
+
+            <p
+                data-fr="Mets en avant une ou deux difficultés concrètes et explique comment tu les as résolues. C'est souvent ici que tu montres le mieux tes compétences d'ingénieur."
+                data-en="Highlight one or two concrete challenges and explain how you solved them. This is often where you best demonstrate your engineering skills.">
+                En combinant ces nouveaux neurones non linéaires, on arrive à la structure suivante :
+                <ul>
+                    <li>
+                        Une couche d'entrée qui reçoit les données
+                    </li>
+                    <li>
+                        Des couches cachées, dans lesquelles le réseau extrait des caractéristiques complexes des données
+                    </li>
+                    <li>
+                        Une couche de sortie, qui donne la prédiction finale.
+                    </li>
+                </ul>
+                Mathématiquement, un réseau de neurones n'est rien d'autre qu'une gigantesque composition de fonctions, auquelles on essaye de règles les bons paramètres.
+            </p>
+
+
+            <h3 data-fr="Difficultés rencontrées"
+                data-en="Challenges encountered">
+                La passe avant (FeedForward)
+            </h3>
+
+            <p>
+                La passe avant (ou FeedForward) est le processur par lequel les données d'entrée traversent le réseau de neurone, couche après couche, pour produire une prédiction finale.
+                A cette étape, le réseau ne fait qu'appliquer des fonctions mathématiques sur les données, il n'apprend pas encore. Il utilise simplement les poids et biais actuels pour calculer un résultat.
+            </p>
+
+            <p>
+                Pour bien suivre le calcul, formalisons l'architecture d'un Perceptron Multicouche (MLP).
+                Le réseau est composé de plusieurs couches, notées de $l=0$ (l'entrée) à $l=L$ (la sortie).
+                $a^[l]$ : Le vecteur des activations de la couche $l$. C'est la sortie de cette couche.
+                $W^[l]$ : La matrice des poids reliant la couche $l-1$ à la couche $l$.
+                $b^[l]$ : Le vecteur des biais de la couche $l$.
+                $g^[l](.)$ : La fonction d'activation appliquée à la couche $l$.
+            </p>
+
+            <p>
+                Pour chaque couche $l$ (en partant de $l=1$ jusqu'à la fin), le réseau effectue deux opérations successives :
+                1. La combinaison linéaire
+                2. L'activation non-linéaire
+            </p>
+
+            <p>
+                Ici on calcule la valeur d'aggregation de chaque neurone.
+                C'est la somme pondérée des activations de la couches précédente (ou des entrées du réseaux pour la première couche), à laquelle on ajoute le biais :
+                $$ z^[l]=W^[l]a^[l-1]+b^[l] $$
+                Si on regarde le détail pour un seul neurone $j$ de la couche $l$, on retrouve :
+                $$ z^[l]_j=\sum_{i=1}{w_{ji}^[l]a_i^[l-1]}+b_i^[l] $$
+            </p>
+                On applique ensuite la fonction d'activation élément par élément sur le vecteur $z^[l]$ pour obtenir la sortie de la couche :
+                $$ a^[l]=g^[l](z^[l])$$
+                C'est cette valeur $a^[l]$ qui servira d'entrée pour la couche suivante $l+1$, ou de sortie du réseau pour la dernière couche.
+            <p>
+                Comme nous l'avons déjà dit, tout l'enjeux est de réussir à trouver les bons paramètres à cette giganteste fonction.
+                Pour mieux comprendre comment entrainer notre réseau de neurone, on va faire un petit détour général sur l'algorithme de la descente de gradient. 
+            </p>
+
+            <h3>
+                La descente de gradient. 
+            </h3>
+            
+            <p>
+                En mathématiques, la descente de gradient est une méthode itérative pour trouver le minimum d'une fonction.
+                Imaginez que vous êtes perdu au sommet d'une montagne embrumée en plein nuit. Votre objectif est d'atteindre le point le plus bas vers la vallée.
+                Vous ne voyez rien, mais sous vos pieds, vous pouvez ressentir l'inclinaison du sol. La stratégie la plus logique est de regarder vers quelle direction 
+                la pente est la plus raide vers le bas, faire un petit pas, et recommencer jusqu'à ce que le sol devienne plat. 
+                Cette méthode ne garantira pas que vous trouverez le points le plus bas de la vallée, mais que vous atteindrez au moins un minimum local. 
+            </p>
+
+            <p>
+                En optimisation mathématique, on remplace les éléments de l'analogie :
+                - La montagne est la fonction de coût (ou Loss Function, notée $J(\Theta)$). Elle mesure l'erreur du modèle. Plus l'erreur est haute, plus on est haut sur la montage. Notre but est de minimiser $J$.
+                - Les coordonnées géographiques sont les paramètres du modèle, regroupés dans un vecteur $\Theta$.
+                - La pente est le gradient (noté $\DeltaJ(\Theta)$). C'est un vecteur composé de toutes les dérivées partielles de la fonction de coût par rapport à chaque paramètres :
+                $$ $\DeltaJ(\Theta)$=\left\[ \frac{\dJ}{\d\Theta_1}\\ \frac{\dJ}{\d\Theta_2}\\ \dots \right\] $$
+            </p>
+
+            <p>
+                Le gradient pointe toujours vers la direction de la plus forte montée. Pour descendre, on doit donc aller dans le sens opposé du gradient.
+                A chaque étape (ou itération), on ajuste les paramètres selon l'équation :
+                $$ \Theta <- \Theta - \alpha.\DeltaJ(\Theta)$$
+                Nous avons déjà brièvement défini $\alpha$ comme le taux d'apprentissage. Dans l'analogie de la montagne, c'est la taille du pas que l'on fait. 
+                S'il est trop grand (prenons par exemple un pas d'un kilomètre), on risque de sauter par-dessus la vallée. S'il est trop petit au contraire, la descente prendra une éternité. 
+            </p>
+
+            <h3>
+                La descente de gradient dans les réseaux de neurones.
+            </h3>
+            
+            <p>
+                Dans un réseau de neurone multi-couches, la structure de la "montagne" devient immensément plus complexe. On ne cherche plus à optimiser un ou deux paramètres, mais parfois des millions de paramètres simultanément.
+                Ici, le vecteur de paramètres $\theta$ est divisé en deux catégories pour chaque couche $l$ :
+                - Les matrices de poids $W^{[l]}$
+                - Les vecteurs de biais $b^{[l]}$
+            </p>
+            
+            <p>
+                Dans un modèle simple comme une régression linéaire, la fonction de coût est souvent convexe (elle ressemble à un bol parfait avec un seul fond évident).
+                Mais dans un réseau de neurones, à cause de l'empilement des couches et des fonctions d'activation non linéaires, la fonction de coût ressemble d'avantage à un paysage chaotique avec des milliers de minimums locaux et des zones très plates.
+                L'application de la descent de gradient se décline alors en trois grandes stratégies pour la recherche de minimum :
+            
+                <ul>
+                    <li>
+                        <strong>1. La descente de Gradient de type batch : </strong>On calcule l'erreur sur l'ensemble de la base de données avant de faire un seul pas. C'est mathématiquement très stable, mais extrêmement lent et gourmand en mémoire si on a des millions de données.
+                    </li>
+                    <li>
+                        <strong>2. La descente de gradient Stochastique (SGD) : </strong> On calcule l'erreur et on fait un pas pour chaque exemple de données, un par un. C'est très rapide et introduit du "bruit" qui aide à sauter hors des mauvais minimums locaux, mais la traectoire est très erratique.
+                    </li>
+                    <li>
+                        <strong>3. La descente de gradient par mini-batchs : </strong>Le compromis moderne. On découpe les données en petits groupes, on calcule le gradient moyen du groupe et on met à jour les poids.
+                    </li>
+                </ul>
+            </p>
+            
+            <p>
+                Super, maintenant on sait comment mettre à jour les poids une fois qu'on connaît le gradient. Cependant, il va falloir être capable de le calculer pour n'importe quel paramètre de n'importe quel neurone au milieu d'un réseau de neurone.
+            </p>
+
+            <h3>
+                La rétropropagation du gradient (Backpropagation).
+            </h3>
+
+            <p>
+                A l'inverse de la passe avant (Feedforward) qui part de l'entrée pour prédire une sortie, nous allons cette fois utiliser la rétropropagation du gradient (Backpropagation), l'algorithme qui permet de partir de l'erreur de sortie pour remonter vers l'entrée.
+                L'idée pour calculer le gradient est d'appliquer la règle de dérivation en chaîne :
+                $$ \Delta\J(\Theta^{[l]})=\frac{\d J}{\d\Theta^{[l]}}=\frac{\d J}{\d a^{[l+1]}}\frac{\d a^{[l+1]}}{\d z^{[l]}}\frac{\d z^{[l]}}{\d \Theta^{[l]}} $$
+                Tout ce qu'on a à faire, c'est de déterminer comment calculer chacune des trois composantes.
+            </p>
+
+            <p>
+                Pour commencer, voici un rappel des notation et du feedforward :
+                Pour une couche $l$, le feed forward a caclulé :
+                - La valeur d'aggregation $z^{[l]} =W^{[l]}a^{[l-1]}+b{[l]}$
+                - La valeur d'activation $a^{[l]}=g^{[l]}(z^{[l]})$
+            </p>
+
+            <p>
+                La dernière composante (\frac{\d z^{[l]}}{\d\Theta^{[l]}}) est donc assez facile à calculer :
+                $$ \frac{\d z^{[l]}}{\d b^{[l]}} = 1 && \frac{\d z^{[l]}}{\d w^{[l]}_{i}}=a^{[l-1]} $$
+            </p>
+
+            <p>
+                Passons maintenant à la deuxième composante (\frac{\d a^{[l+1]}}{\d z^{[l]}}).
+                Toujours en se servant de nos formules, on en déduis rapidement que :
+                $$ \frac{\d a^{[l+1]}}{\d z^{[l]}} = \frac{\d g}{\d z} $$
+                Elle donc sera entièrement dépendant de la fonction d'activation choisie.
+                Pour l'instant, en restant avec notre fonction sigmoide ($\sigma(z)=\frac{1}{1+e^{-z}}$), on trouve après quelques calculs : $\frac{\d a^{[l+1]}}{\d z^{[l]}}=\sigma(z)(1 - \sigma(z))$.
+            </p>
+
+            <p>
+                Finalement la troisième composante (\frac{\d J}{\d a^{[l+1]}}) dépent elle aussi uniquement de la fonction de coût choisie.
+                Pour illustrer, nous allons choisir la fonction de coût d'erreur quadratique moyenne (MSE).
+                C'est une fonction assez utilisée assez courament pour sa simplicité et son efficacité. Voici sa formule :
+                $$ MSE = \frac{1}{2.n}\sum^n_{i=1}(y_i-\^y_i)^2 $$
+                Pour la dernière couche, on a donc \frac{\d J}{\d a^{[L]}}=\^y - y=a^{[L]}-y.
+                Voici pourquoi elle est si simple : le résultat est simplement la différence entre la prédiction et la vraie valeur.
+            </p>
+
+            <p>
+                Maintenant, comment déterminer la troisième composante pour les autres couches ?
+                La réponse est simple : encore une dérivée en chaîne. Puisque l'activation d'un neurone de la couche $l$ influence toutes les entrées de la couche suivante $l+1$, nous devons sommer leurs contributions :
+                $$ \frac{\d J}{\d a^{[l]}}=\left\( \sum_j{\frac{\d J}{\d z^{[l+1]}_j}\frac{\d z^{[l+1]}}{\d a^{[l]}_i}}, \forall i \right\( $$
+                Sosu forme matricielle condensée, ça s'écrit :
+                $$ \frac{\d J}{\d a^{[l]}}=(W^{[l+1]})^T \frac{\d J}{\d z^{[l+1]}} $$
+            </p>
+
+            <p>
+                Pour simplifier les calculs, nous définission le vecteur d'erreur d'une couche noté $\delta^{[l]}$ comme la dérivée du coût par rapport aux entres brutes de cette même couche :
+                $$ \delta^{[l]}=\frac{\d J}{\d z^{[l]}}=\frac{\d J}{\d a^{[l]}}\odot\frac{\d a^{[l]}}{\d z^{[l]}} $$
+                Avec $\odot$ le produit de Hadamard (élément par élément).
+            </p>
+
+            <p>
+                Puisque nous savons calculer l'erreur de la couche de sortie $\delta^{[L]}$, nous pouvons remonter le réseau couche par couche en combinant nos définitions :
+                $$ \frac{\d J}{\d a^{[l]}}=(W^{[l+1]})^T\delta^{[l+1]} $$
+                En injectant cette expression dans la définition de $\delta^{[l]}$, on obtient la fameuse équation de récurrence de la rétropropagation :
+                $$ \delta^{[l]}=((W^{[l+1]})^T \delta^{[l+1]}) \odot \frac{\d g}{\d z^{[l]}} $$
+            </p>
+
+            <p>
+                Nous obtenons ainsi les formules finales permettant de calculer le gradient du coût par rapport aux paramètres de n'importe quelle couche à partir de son vecteur d'erreur :
+                $$ \frac{\d J}{\d W^{[l]}}=\delta^{[l]}(a^{[l-1]})^T && \frac{\d J}{\d W^{[l]}}=\delta^{[l]} $$
+            </p>
+
+            <p>
+                Théoriquement, dès maintenant on a déjà toutes les connaissances mathématiques nécessaire pour créer le réseau de neurone.
+                Mais pour avoir un projet un peu plus modulable, on va ajouter quelques éléments en plus dans les prochaines parties.
+            </p>
+
+            <h3>
+                Fonctions d'activation
+            </h3>
+
+            <p>
+                <string>Linéaire (identité)</string>
+                $Id(z)=z$ donc $\frac{\d g}{\ z^{[l]}}=1$
+                A n'utiliser que sur la couche de sortie d'un réseau effectuant une tâche de régression pure (lorsqu'on veut prédire une valeur continue sans borne).
+                Sur les couches cachées, elle n'a aucun intérêt puisque la composition de fonctions linéaires reste linéaire (on revient au problème initial du perceptron).
+            </p>
+            <p>
+                <string>Sigmoid $\sigma$)</string>
+                $\sigma(z)=\frac{1}{1 + e^{-z}}$ donc $\frac{\d g}{\ z^{[l]}}=\sigma(z)(1-\sigma(z))$
+                Historiquement très populaire, elle comprime la sortie entre 0 et 1. Elle est idéale pour la classification binaire en couche de sortie (pour exprimer une probabilité).
+                Cependant, elle souffre du problème de la disparition du gradient pour les grandes valeurs absolues.
+            </p>
+            <p>
+                <string>Rectified Linear Unit (ReLU)</string>
+                $ReLU(z)=\left\{ z si z\geq 0 \\ 0 sinon \right.$ donc $\frac{\d g}{\ z^{[l]}}=\left\{ 1 si z\geq 0 \\ 0 sinon \right.$
+                C'est le standard quasi incontournable pour les couches cachées des réseaux profond. Elle est ultra-rapide à calculer et atténue le problème de la disparition du gradient pour les valeurs positives.
+                Elle a par contre comme inconvénient de totalement supprimer le gradient lorsque l'entrée est négative. Un neurone dont l'entrée est toujours négative ne se met donc plus jamais à jour.
+            </p>
+            <p>
+                <string>Tangeante hyperbolique ($tanh$)</string>
+                $tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$ donc $\frac{\d g}{\ z^{[l]}} = 1-tanh^2(z)$
+                Similaire à la sigmoïde mais centrée sur zéro (les sorties vont de -1 à 1). Elle est souvent préférée à la sigmoïde dans les
+                couchescachées car des activations facilitent la convergence de l'optimiseur.
+            </p>
+            <p>
+                <string>Leaky ReLU</string>
+                $LeakyReLU(z) = \left\{ z si z\geq 0 \\ az sinon \right.$ (généralement avec $a=0.01$) donc $\frac{\d g}{\ z^{[l]}} = \left\{ 1 si z\geq 0 \\ a sinon \right.$
+                C'est assez évident, c'est une variante directe de la fonction ReLU. En autorisant une petite pente pour les valeurs négatives au lieu de les annuler complètement, elle résout le problème des neurones morts et maintient le gradient actif.
+            </p>
+            <p>
+                <string>Exponential Linear Unit (ELU)</string>
+                $ELU(z) = \left\{ z si z\geq 0 \\ a(e^z-1) sinon \right.$ donc $\frac{\d g}{\ z^{[l]}} = \left\{ 1 si z\geq 0 \\ \sigma(z)+a sinon \right.$
+                Cette fonction combine les avantages de la ReLU tout en ayant des sorties dont la moyenne est proche de zéro, ce qui accélère l'apprentissage et rapproche l'activation d'une normalisation naturelle.
+            </p>
+            <p>
+                <string>Sigmoid Linear Unit / Swish (SiLU)</string>
+                $SiLU(z)=z\sigma(z)$ donc $\frac{\d g}{\ z^{[l]}} = \sigma(z) + z\sigma(z)(1 - \sigma(z))$
+                Découverte par des recherches en automatisation d'architecture (notamment par Google), elle surpasse souvent la ReLU dans les réseaux très profonds.
+                Elle est lisse, non monotone et possède une "bosse" négative subtile qui aide à la représentation.
+            </p>
+            <p>
+                <string>Gaussian Error Linear Unit (GELU)</string>
+                $GELU(z) = z \Phi(z)$ (où $\Phi(z)$ est la fonction de répartition de la loie normale standard, approchée par $0.5z(1 + tanh(\sqrt{\frac{2}{\pi}}(z + 0.044715z^3)))$ donc $\frac{\d g}{\ z^{[l]}} = \dots$
+                C'est l'activation de référence utilisée dans les architectures de pointe de type Transformers (comme BERT ou GPT). Elle pondère les entrées en fonction de leur valeur probabiliste plutôt de les couper brutalement comme la fonction ReLU.
+            </p>
+            <p>
+                <string>Scaled Exponential Linear Unit (SELU)</string>
+                $SELU(z) = \lambda \left\{ z si z>0 \\ a(e^z-1) sinon \right.$ (avec $\lambda$=1.0507$ et $a=1.6732$) donc $\frac{\d g}{\ z^{[l]}} = \lambda \left\{ 1 si z>0 \\ ae^z sinon \right.$
+                Conçue mathématiquement pour que les activations s'auto-normalisent (moyenne à 0 et variance à 1) au fil des couches, évitant ainsi le besoin de couches de normalisation supplémentaires.
+            </p>
+
+            <p>
+                Le choix de l'activation dépend directement de la position de la couche dans le réseau et de la nature du problème à résoudre.
+                Pour la couche de sortie, on préférera utiliser la fonction linéaire pour les tâches de régression pure (prédire une valeur continue sans borne), et sigmoïd pour la classification binaire (sortie en 0 et 1 interprétable comme une probabilité).
+                Pour les couches cachées, ReLU doit être le choix par défaut pour la grande majorité des cas, car elle est rapide, efficace et évite la disparition du gradient pour les valeurs positives.
+                Si l'on rencontre des problèmes de neurones morts, il faut privilégier les fonctions LeakyReLU ou ELU.
+                Pour les réseaux plus petits, la fonction tanh va être très utile lorque l'on souhaite des activations centrées sur zéro, entre -1 et 1.
+                Finalement, les fonctions SiLU et GELU seront réservées aux architectures plus avancées ou très profondes, où leur non-linéarité offre de meilleures performances de généralisation.
+            </p>
+
+            <h3>
+                Fonctions de coûts
+            </h3>
+
+            <p>
+                <strong>Erreur Quadratique Moyenne (MSE)</strong>
+                $MSE(\^y) = \frac{1}{2n}\sum^m_{i=1}(\^y_i-y_i)^2$ donc $\frac{\d L}{\d \^y} = \^y - y$
+                C'est la fonction de référence pour les tâches de régression (prédire une valeur continue). Elle pénalise lourdement les grandes erreurs grâce au carré, ce qui guide l'optimiseur efficacement vers la solution.
+            </p>
+
+            <p>
+                <strong>Erreur Absolue Moyenne (MAE)</strong>
+                $MAE(\^y) = \frac{1}{n}\sum^m_{i=1}|\^y_i-y_i|$ donc $\frac{\d L}{\d \^y} = signe(\^y - y) = \left\{ 1 si \^y > y \\ -1 sinon \right.$
+                Egalement utiisée en régression, elle est beaucoup moins sensible aux valeurs aberrantes (outliers) que la MSE, car l'erreur n'est pas mise au carré.
+            </p>
+
+            <p>
+                <strong>Entropie Croisée Binaire / Log Loss (BCE)</strong>
+                $BCE(\^y) = -\frac{1}{n}\sum^m_{i=1}[y_i\log(\^y_i) + (1-y_i)\log(1-\^y_i)]$ donc $\frac{\d L}{\d \^y} = \frac{\^y - y}{\^y(1-\^y)}$
+                Cette fonction de coût est le standard incontournable pour la classification binaire (lorsque la sortie est une probabilité entre 0 et 1 via une sigmoïde).
+                Elle pénalise sévèrement un modèle confiant mais qui se trompe complètement.
+            </p>
+
+            <p>
+                <strong>Entropie Croisée Catégorielle (CCE)</strong>
+                $CCE(\^y) = -\sum_c{y_c\log(\^y_c)}$ donc $\frac{\d L}{\d \^y} = -\frac{y_c}{\^y_c}$
+                Utilisée pour la classification multiclasse (pour une cible encodée en one-hot). Elle mesure la distance entre la distribution de probabilité prédite par le modèle et la distribution réelle.
+            </p>
+
+            <p>
+                Comment choisir la bonne fonction de coût ?
+                Pour de la régression (prédire une grandeur) : 
+                - MSE est le choix par défaut, idéal si le jeu de données est propre et qu'on souhaite que le modèle corrige fermement les grosses erreurs.
+                - MAE à privilégier si le dataset contient beaucoup de bruits ou d'outliers que le modèle ne doit pas essayer d'absolument surcompenser.
+                Pour de la classification :
+                - BCE est à choisir lorsque l'on a seulement deux classes de sorties (ex: 0=chat et 1=chien).
+                - CCE à partir de trois classes ou plus (ex: Reconnaître un chiffre)
+            </p>
+
+            <h3>Algorithme Génétique</h3>
+
+            <p>
+                Pour terminer cette première version de framework de réseaux de neurones, j'avais envie d'y intégrer l'aprentissage par algorithme génétique.
+                Ici, on repars seulement avec notre structure du réseau de neurone et le feedforward, et l'on va encore une fois s'inspirer de la nature pour faire
+                "apprendre" notre système.
+            </p>
+            
+            <p>
+                L'idée s'inspire directement de la loi de l'évolution instaurée par Darwin :
+                - Chaque individu dans la nature est soumis tout au long de sa vie à une série d'épreuves (trouver à manger, échapper aux prédateurs, etc.)
+                - Les individus qui survivent, possèdent obligatoirement des caractéristiques avantageuses (sinon elles n'auraient pas survécues)
+                - Les survivants se reproduisent, et partagent leurs gènes avantageux à leur descendance.
+                - Chaque descendant subit une légère mutation de ses caractéristiques (dans toutes les directions, en bien ou en mal)
+                - On répète le processus
+                Et en théorie, avec assez de temps, les réseaux convergeront vers la solution optimale.
+            </p>
+
+            <p>
+                Je trouve cet algorithme assez fascinant, car il nous permet dans des contextes très variés de résoudre un problème d'optimisation, sans même 
+                comprendre réellement ce qu'il se passe à l'intérieur du mécanisme.
+            </p>
+
+            <p>
+                Dans notre contexte de réseau de neurone, nous posons une population de $N$ réseaux de neurones initialisés aléatoirements, qui chercheront à maximiser le score de leur fonction d'évaluation (fitness function), qui
+                est souvent en pratique $\frac{1}{1+L(\^y)}$ lorsque l'on possède un dataset, mais pourrait littéralement représenter n'importe quel objectif selon sur quoi on aimerait entraîner le réseau.
+            </p>
+            
+            <p>
+                Première étape, on évalue le score de chaque réseau. Deuxième étape, on sélectionne et reproduis la population actuelle en fonction de ses scores pour générer la prochaine population.
+                Dernière étape, on mute légérement chaque réseau pour trouver des nouvelles optimisations.
+            </p>
+
+            <p>
+                Il y a plusieurs choix de sélection et reproduction qui seront plus ou moins adaptées en fonction des situations, mais ici j'en ai gardé qu'une seule :
+                Pour chaque réseau de la prochaine génération :
+                - Je sélectionne par tournoi deux réseaux parents (tire au sort K réseaux mais ne garde que le meilleur score deux fois)
+                - Pour chaque paramètre, j'ai une chance sur deux d'obtenir le gène du parent A, sinon j'obtiens le gène du parent B
+            </p>
+
+            <p>
+                J'y applique ensuite une mutation, en fonction d'un taux de mutation et d'une force de mutation :
+                - Pour chaque paramètre, si un nombre tiré aléatoirement entre 0 et 1 est inférieur au taux de mutation, je lui ajoute plus ou moins un nombre aléaoire entre 0 et la force de mutation.
+            </p>
+
+            <p>
+                Ensuite, je n'ai plus qu'à répéter le processus en boucle, et au bout d'un certain nombre de génération, l'algorithme trouve une solution !
+                C'est déjà fini pour cette partie, qui est beaucoup plus digeste car demande beaucoup moins de notions mathématiques.
+                Bien qu'elle est plus facile à apréhender pour nous humains, ce n'est pas toujours la meilleure option. Dans les cas où l'on a un grand jeu de données, 
+                l'algorithme de rétropropagation du gradient sera toujours beaucoup plus efficace en mémoire et en temps. Mais dans certains cas (par exemple l'apprentissage d'un jeu par l'expérimentation sans jeu de données),
+                l'algorithme génétique nous permettra (à condition de choisir la bonne fonction d'évaluation) d'optimiser des problèmes qui serait impossible autrement.
+            </p>
+
+            <h3>
+                Pour aller plus loin
+            </h3>
+
+            <p>
+                Je pense que ce projet n'est qu'une première partie d'un série sur les réseaux de neurones, car il reste énormément de concepts importants à explorer
+                (notamment l'initialisation des poids, l'analyse des performances, d'autres utilisations, etc.), mais c'est tout ce dont j'avais besoin pour l'instant.
+                On peut d'ores et déjà entrainer un réseau de neurone avec de l'apprentissage supervisé (avec un jeu de données étiquetées) pour relier une entrée à une sortie voulue.
+            </p>
+
+            <h2>La Programmation</h2>
+
+            <p>
+                Maintenant que chaque concept théorique a été exploré, il est maintenant facile de pouvoir tout recoder. On aura juste à 
+                structurer nos données, et appliquer les différentes formules et algorithmes.
+            </p>
+
+            <h3>Le Réseau de Neurones.</h3>
+
+            <p>
+                Pour commencer, nous allons modéliser une couche du réseau de neurone par une structure, qui contiendra la matrice des poids de la couche $W^{[l]}$ et les biais de chaque neurone avec le vecteur $b^{[l]}$.
+                La structure contiendra le nombre d'entrée de la couche, le nombre de neurones (aussi égal au nombre de sorties) et le type d'activation (on y reviendra).
+                Ensuite, nous allons stocker directement dans chaque couche l'entrée qu'elle reçoit, les valeurs d'aggregations et les valeurs d'activations de chaque neurone, pour faciliter de un le calcul de passe avant, et de deux la rétropropagation.
+                Finalement, on va stocker aussi le vecteur d'erreur de la couche $\delta^{[l]}$.
+
+                <code>
+                    typedef struct {
+                        int n_input;
+                        int n_output;
+                        ActivationType act;
+
+                        double *inputs;
+                        double *outputs;
+                        double *pre_act;
+                        double *deltas;
+                    } Layer;
+                </code>
+            </p>
+
+            <p>
+                Avec cette structure de faite, on peut maintenant modéliser un réseau de neurone par une sctructure qui contiendra un tableau de couches.
+                On stockera donc aussi le nombre de couches, le nombre d'entrées, le nombre de sorties et la fonction de coût (on y reviendra aussi).
+
+                <code>
+                    typedef struct {
+                        int n_input;
+                        int n_output;
+                        int n_layers;
+                        LossType loss;
+
+                        Layer *layers;
+                    } NeuralNetwork;
+                </code>
+            </p>
+
+            <p>
+                Pour choisir les fonctions d'activation et de coût, on introduis les types ActivationType et LossType, qui seront des énumérations.
+
+                <code>
+                    typedef enum {
+                        ACTIVATION_LINEAR,      // Linéaire (Identité)
+                        ACTIVATION_SIGMOID,     // Fonction Sigmoide
+                        ACTIVATION_RELU,        // Rectified Linear Unit
+                        ACTIVATION_TANH,        // Tangeante Hyperbolique
+                        ACTIVATION_LEAKYRELU,   // Leaky ReLU
+                        ACTIVATION_ELU,         // Exponential Linear Unit
+                        ACTIVATION_SILU,        // Sigmoid Linear Unit / Swish
+                        ACTIVATION_GELU,        // Gaussian Error Linear Unit
+                        ACTIVATION_SELU         // Scaled Exponential Linear Unit
+                    } ActivationType;
+                </code>
+
+                <code>
+                    typedef enum {
+                        LOSS_MSE,               // Erreur Quadratique Moyenne
+                        LOSS_MSA,               // Erreur Absolue Moyenne
+                        LOSS_BCE,               // Entropie Croisée Binaire / Log Loss
+                        LOSS_CCE,               // Entropie Croisée Catégorielle
+                    } LossType;
+                </code>
+            </p>
+
+            <p>
+                Maintenant pour l'entrainement, on introduis plusieurs fonctions (sans aller dans le détail de l'implémentation, tout a été détaillé dans la partie théorique):
+                - NN_Feedforward(NeuralNetwork *net, double *inputs): effectue la passe avant du réseau, remplissant pour chaque couche le tableau d'entrée, d'aggregations et d'activations.
+                - NN_ComputeDelta(NeuralNetork *net, double *expected_outputs): effectue la rétropropagation sur le réseau, calculant couche pas couche le tableau des erreurs delta.
+                - NN_ApplyLearn(NeuralNetwork *net, double learning_rate): met à jour chaque paramètres avec les deltas déjà calculés et le taux d'apprentissage.
+
+                Pour faciliter l'apprentissage, on va généraliser la séquence d'apprentissage dans une fonction qui prendra en entrée un petit lot de données et s'entrainer dessus, avec la fonction :
+                - NN_LearnBatch(NeuralNetwork *net, double **inputs, double **outputs)
+            </p>
+
+            <h2>
+                Exemples d'utilisation
+            </h2>
+
+            <p>
+                Il serait dommage de terminer cet article sans donner un résultat final d'utilisation. Alors pour ça, on va imaginer le problème suivant :
+                Le druide du village vient de mourir, et malheureusement, il n'a pas eu le temps de transmettre tout son savoir à son disciple.
+                Manque de chance, c'était le seul capable de déterminer si un champignon est comestible. Mais heureusement, il avait gardé
+                des traces de ses dernières trouvailles, dont nous allons pouvoir nous servir.
+                Dans ces papiers, il a noté pour chaque champignon des mesures (taille du chapeau, hauteur du pied, intensité de la couleur, taille du pied), et si le champignon est comestible ou non.
+            </p>
+
+            <p>
+                Vous l'aurez donc compris, on a donc un dataset (non réel, il a été généré artificiellement donc à ne pas utiliser dans la vraie vie) avec 4 entrée et 1 sortie.
+                Une étape dont nous avons pas parlé est la normalisaiton des données. Chaque donnée du dataset est un entier encodé sur 8 bits, donc de 0 à 255,
+                donc nous allons diviser chaque entrée par 255 pour n'avoir que des entrées entre 0 et 1 (ce qui facilitera très grandement l'apprentissage).
+                La sortie sera représentée par un nombre lui aussi entre 0 et 1, avec 0=non comestible et 1=comestible, qui donnera la probabilité que le champignon soit comestible.
+                Comme nous travaillons avec des probabilités, nous allons choisir en sortie la fonction sigmoïde. Par contre pour les couches cachées, on garde la fonction ReLU (pour éviter l'évanouissement du gradient).
+                Finalement, comme on cherche à faire de la classification binaire (0=non comestible, 1=comestible), la fonction de coût idéale est l'entropie croisée binaire (ou Log Loss).
+            </p>
+
+            <p>
+                On charge donc le dataset, on le sépare en deux (70% des données serviront à l'entrainement, et 30% serviront au tests).
+                On crée notre réseau de neurone avec quatre entrées, deux couches cachées avec ReLU, une neurone de sortie avec sigmoïde, et la fonction de coût BCE.
+                On initialise chaque paramètre du réseau avec des valeurs aléatoires entre -1 et 1.
+
+                Maintenant, on entraine grâce à notre dataset d'entrainement le réseau de neurone, avec notre fonction NN_LearnBatch(). Une fois que c'est fait, on évalue maintenant
+                notre réseau de neurone sur le dataset de test, et si tout se passe bien, on obtient très vite une précision de 100% !
+            </p>
+
+        </section>
+
+
+        <!-- Illustration secondaire, à rajouter par la suite (mais à garder pour la forme) -->
+
+        <figure class="project-figure">
+
+            <img src="../../assets/images/compressed/large_planet.jpg"
+                    alt="Illustration d'un aspect technique du projet"
+                    loading="lazy">
+
+            <figcaption
+                data-fr="Illustration technique — remplace cette image par une capture pertinente."
+                data-en="Technical illustration — replace this image with a relevant screenshot.">
+                Illustration technique — remplace cette image
+                par une capture pertinente.
+            </figcaption>
+
+        </figure>
+
+
+        <!-- Résultats -->
+
+        <section class="project-section">
+
+            <p class="section-tag"
+                data-fr="04 — RÉSULTATS"
+                data-en="04 — RESULTS">
+                04 — RÉSULTATS
+            </p>
+
+            <h2 data-fr="Le résultat<span>.</span>"
+                data-en="The outcome<span>.</span>">
+                Le résultat<span>.</span>
+            </h2>
+
+            <p
+                data-fr="Présente le résultat obtenu et compare-le, si possible, aux objectifs initiaux. Ajoute des données mesurables lorsque tu en disposes."
+                data-en="Present the outcome and, if possible, compare it with the initial objectives. Include measurable data whenever available.">
+                Présente le résultat obtenu et compare-le, si possible,
+                aux objectifs initiaux. Ajoute des données mesurables
+                lorsque tu en disposes.
+            </p>
+
+            <div class="project-results">
+
+                <article class="project-result">
+                    <span class="result-index">01</span>
+
+                    <h3 data-fr="Résultat obtenu"
+                        data-en="Outcome">
+                        Résultat obtenu
+                    </h3>
+
+                    <p
+                        data-fr="Décris une réalisation concrète."
+                        data-en="Describe a concrete achievement.">
+                        Décris une réalisation concrète.
+                    </p>
+                </article>
+
+                <article class="project-result">
+                    <span class="result-index">02</span>
+
+                    <h3 data-fr="Compétence développée"
+                        data-en="Skill developed">
+                        Compétence développée
+                    </h3>
+
+                    <p
+                        data-fr="Présente une compétence mise en pratique."
+                        data-en="Highlight a skill you put into practice.">
+                        Présente une compétence mise en pratique.
+                    </p>
+                </article>
+
+                <article class="project-result">
+                    <span class="result-index">03</span>
+
+                    <h3 data-fr="Amélioration possible"
+                        data-en="Potential improvement">
+                        Amélioration possible
+                    </h3>
+
+                    <p
+                        data-fr="Indique une piste d'amélioration ou une suite possible."
+                        data-en="Describe a possible improvement or next step.">
+                        Indique une piste d'amélioration ou une suite possible.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Compétences -->
+
+        <section class="project-section">
+
+            <p class="section-tag"
+                data-fr="05 — COMPÉTENCES"
+                data-en="05 — SKILLS">
+                05 — COMPÉTENCES
+            </p>
+
+            <h2 data-fr="Ce que j'ai appris<span>.</span>"
+                data-en="What I learned<span>.</span>">
+                Ce que j'ai appris<span>.</span>
+            </h2>
+
+            <p
+                data-fr="Termine par un bilan personnel : ce que tu as appris, les compétences que tu as renforcées et ce que tu ferais différemment aujourd'hui."
+                data-en="Conclude with a personal reflection: what you learned, which skills you strengthened and what you would do differently today.">
+                Termine par un bilan personnel : ce que tu as appris,
+                les compétences que tu as renforcées et ce que tu ferais
+                différemment aujourd'hui.
+            </p>
+
+            <div class="project-tags project-skills">
+                <span>Python</span>
+                <span data-fr="Résolution de problèmes"
+                        data-en="Problem solving">
+                    Résolution de problèmes
+                </span>
+                <span data-fr="Conception logicielle"
+                        data-en="Software design">
+                    Conception logicielle
+                </span>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- =========================================
+            LIENS DU PROJET
+    ========================================== -->
+
+    <section class="project-links">
+
+        <div>
+            <p class="section-tag"
+                data-fr="POUR ALLER PLUS LOIN"
+                data-en="EXPLORE FURTHER">
+                POUR ALLER PLUS LOIN
+            </p>
+
+            <h2 data-fr="Le projet vous intéresse<span> ?</span>"
+                data-en="Interested in the project<span>?</span>">
+                Le projet vous intéresse<span> ?</span>
+            </h2>
+        </div>
+
+        <div class="project-actions">
+
+            <!-- Remplacer # par l'URL réelle du dépôt -->
+            <a href="#"
+                class="project-button project-button-primary"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <span data-fr="Voir le code source"
+                        data-en="View source code">
+                    Voir le code source
+                </span>
+
+                <span aria-hidden="true">↗</span>
+
+            </a>
+
+            <!-- Facultatif : démonstration ou site en ligne -->
+            <a href="#"
+                class="project-button project-button-secondary"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <span data-fr="Voir la démonstration"
+                        data-en="View live demo">
+                    Voir la démonstration
+                </span>
+
+                <span aria-hidden="true">↗</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+            NAVIGATION ENTRE LES PROJETS
+    ========================================== -->
+
+    <nav class="project-pagination"
+            aria-label="Navigation entre les projets">
+
+        <a href="../index.html#projets"
+            class="project-back-link">
+
+            <span aria-hidden="true">←</span>
+
+            <span data-fr="Retour aux projets"
+                    data-en="Back to projects">
+                Retour aux projets
+            </span>
+
+        </a>
+
+        <!-- Remplacer les liens par les pages réelles -->
+        <a href="../p-0001/project.html"
+            class="project-next-link">
+
+            <span data-fr="Projet suivant"
+                    data-en="Next project">
+                Projet suivant
+            </span>
+
+            <span aria-hidden="true">→</span>
+
+        </a>
+
+    </nav>
+
+</main>
+
+
+<footer class="site-footer">
+    <a class="footer-logo" href="../../index.html">
+        H-BELIVEAU<span>.</span>
+    </a>
+
+    <p data-fr="© 2026 Hugo Béliveau · Portfolio personnel"
+       data-en="© 2026 Hugo Béliveau · Personal portfolio">
+        © 2026 Hugo Béliveau · Portfolio personnel
+    </p>
+
+    <a href="../../pages/contact.html">Contact ↗</a>
+</footer>
+
+
+<script src="../../scripts/main.js" defer></script>
+
+
+</body>
+</html>

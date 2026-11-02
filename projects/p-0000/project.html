@@ -31,6 +31,22 @@
     <meta property="article:author" content="h-beliveau.github">
     <meta property="article:published_time" content="2026-10-04T20:37:58.434Z">
     <meta property="og:image" content="https://h-beliveau.github.io/assets/images/image_presentation.png">
+
+    <!-- 1. CSS de KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+
+    <!-- 2. Script principal KaTeX -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+
+    <!-- 3. Extension d'auto-rendu automatique -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+        ]
+        });">
+    </script>
 </head>
 
 <body>
@@ -203,11 +219,12 @@
             </h2>
 
             <p
-                data-fr="Présente ici le contexte du projet : pourquoi l'as-tu réalisé, quel était ton objectif et quel problème souhaitais-tu résoudre ?"
-                data-en="Introduce the project: why did you build it, what was your objective, and what problem were you trying to solve?">
+                data-fr="Présente ici le contexte du projet : pourquoi l'as-tu réalisé, quel était ton objectif et quel problème souhaitais-tu résoudre ?$u_C(t)=10V$."
+                data-en="Introduce the project: why did you build it, what was your objective, and what problem were you trying to solve?$u_C(t)=10V$.">
                 Présente ici le contexte du projet : pourquoi l'as-tu
                 réalisé, quel était ton objectif et quel problème
                 souhaitais-tu résoudre ?
+                $u_C(t)=10V$.
             </p>
 
             <p
